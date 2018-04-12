@@ -4,39 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Neighbourhood Map</title>
-        <style type="text/css">
-          html, body, section { height: 100%; margin: 0; padding: 0; }
-          #map { height: 100%; }
-        </style>
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header class="main-header">
-            <div class="header-logo">
-                <!--logo image-->
-            </div>
-            <div class="header-title">
-                Neighbourhood Map
-            </div>
+        <header class="main-header flex-item">
+            Neighborhood Map - Atlanta,GA
         </header>
-        <section class="main-section">
-            <h3 class="section-header">Tourist Destinations In Atlanta</h3>
-            <div class="section-list">
-              <input type="text" data-bind="value: filterText">
-              <button type="button" data-bind="click: showFilteredLocations">
-                Filter</button>
-              <button type="button" data-bind="click: resetLocations">
-                Reset</button>
-              <ul data-bind="foreach: locationList">
-                    <li data-bind="text: title,click: $parent.openMarkerForLocation">
-              </ul>
-            </div>
-            <div id="map"></div>
-
-            <script src="js/lib/knockout-3.4.2.js"></script>
-              <script src="js/lib/jquery.min.js"></script>
-            <script src="js/app.js"></script>
-            <script async defer
-                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3BkyP719EQ2EtqZLzZwP7vjvG5SNzKXw&v=3&callback=start" onerror="mapError">
-            </script>
+          <section class="main-section flex-item container">
+                <div class="section-list-style">
+                    <div class="filter-parent">
+                        <input type="text" data-bind="value: filterText" class="filter-input">
+                        <button type="button" data-bind="click: showFilteredLocations" class="filter-button">
+                          Filter</button>
+                        <button type="button" data-bind="click: resetLocations" class="filter-button">
+                          Reset</button>
+                    </div>
+                    <ul data-bind="foreach: locationList">
+                          <li data-bind="text: title,click: $parent.openMarkerForLocation" class="list-item-style">
+                    </ul>
+                </div>
+                <div class="section-map-style">
+                    <div class="map-div">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </section>
+          <footer class="footer-style flex-item">All Rights reserved @Neighborhood Map Project</footer>
+          <script src="js/lib/knockout-3.4.2.js"></script>
+            <script src="js/lib/jquery.min.js"></script>
+          <script src="js/app.js"></script>
+          <script async defer
+               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3BkyP719EQ2EtqZLzZwP7vjvG5SNzKXw&v=3&callback=start" onerror="mapError">
+          </script>
     </body>
 </html>

@@ -54,7 +54,7 @@ var marker;
 var initMap = function(){
     map = new google.maps.Map(document.getElementById('map'), {
            center: {lat: 33.753746, lng: -84.386330},
-           zoom: 13,
+           zoom: 14,
            mapTypeControl: false
     });
     // bounds
