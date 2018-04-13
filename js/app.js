@@ -140,6 +140,7 @@ var ViewModel = function(){
             self.locationList.push(locationItem);
             resetMarker(locationItem.id());
         });
+        resetInfoWindows(infowindowForMarker);
     };
 
     // Setting markers data
@@ -248,6 +249,17 @@ var showFilteredMarker = function(id){
 // Function to show marker on a map
 var resetMarker = function(id){
     markers[id].setMap(map);
+};
+
+
+// Function to close infowindows after resetting markers
+var resetInfoWindows = function(infowindowForMarker){
+    for(var i=0; i<markers.length; i++){
+        var marker = markers[i];
+        if(infowindowForMarker.marker == marker){
+          infowindowForMarker.close();
+        }
+    }
 };
 
 
