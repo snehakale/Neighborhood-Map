@@ -176,7 +176,7 @@ var openInfoWindow = function(map, marker, infowindowForMarker){
         success : function(data){
            if(data.response){
                name = data.response.venue.name;
-               contact = data.response.venue.contact.formattedPhone
+               contact = data.response.venue.contact.formattedPhone;
                address = data.response.venue.location.formattedAddress;
                weburl = data.response.venue.url;
                var line1="";
