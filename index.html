@@ -1,26 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <!-- Viewport property to make webpage responsive -->
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Neighbourhood Map</title>
+        <title>Neighborhood Map</title>
+        <!-- Link to css file -->
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
+        <!-- Header part -->
         <header class="main-header flex-item">
             Neighborhood Map - Atlanta,GA
         </header>
-          <section class="main-section flex-item container">
+        <!-- Scetion part -->
+        <section class="main-section flex-item">
+            <h4>Popular Destinations in Atlanta,GA.
+                For more info click on any markers or list items.
+            </h4>
+            <div class="container">
                 <div class="section-list-style">
                     <div class="filter-parent">
-                        <input type="text" data-bind="value: filterText" class="filter-input">
-                        <button type="button" data-bind="click: showFilteredLocations" class="filter-button">
-                          Filter</button>
-                        <button type="button" data-bind="click: resetLocations" class="filter-button">
-                          Reset</button>
+                        <input type="text" data-bind="value: filterText"
+                        class="filter-input">
+                        <button type="button" data-bind="click: showFilteredLocations"
+                            class="filter-button">
+                            Filter</button>
+                        <button type="button" data-bind="click: resetLocations"
+                            class="filter-button">
+                            Reset</button>
                     </div>
                     <ul data-bind="foreach: locationList">
-                          <li data-bind="text: title,click: $parent.openMarkerForLocation" class="list-item-style">
+                        <li data-bind="text: title,click: $parent.openMarkerForLocation"
+                            class="list-item-style">
                     </ul>
                 </div>
                 <div class="section-map-style">
@@ -28,13 +40,20 @@
                         <div id="map"></div>
                     </div>
                 </div>
-            </section>
-          <footer class="footer-style flex-item">All Rights reserved @Neighborhood Map Project</footer>
-          <script src="js/lib/knockout-3.4.2.js"></script>
-            <script src="js/lib/jquery.min.js"></script>
-          <script src="js/app.js"></script>
-          <script async defer
-               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3BkyP719EQ2EtqZLzZwP7vjvG5SNzKXw&v=3&callback=start" onerror="mapError">
-          </script>
+            </div>
+        </section>
+        <!-- Footer part -->
+        <footer class="footer-style flex-item">
+            All Rights reserved @Neighborhood Map Project
+        </footer>
+        <!-- Links to required js,lib files -->
+        <script src="js/lib/knockout-3.4.2.js"></script>
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <!-- call to Google maps API -->
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3BkyP719EQ2EtqZLzZwP7vjvG5SNzKXw&v=3&callback=start"
+            onerror="mapError">
+        </script>
     </body>
 </html>

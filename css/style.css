@@ -1,3 +1,4 @@
+/* rules applicable for entire page -start */
 * {
     box-sizing: border-box;
 }
@@ -7,23 +8,26 @@ html {
     padding: 0;
     margin: 0;
 }
+/* rule applicable for entire page - end */
 
+/* rules applicable for body - start */
 body {
-  display: flex;
-  flex-direction: column;
-  font-family: sans-serif;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
+/* rules applicable for body - end */
 
+/* rules applicable for header -start */
 .main-header {
     width: 100%;
-    display: block;
     height: 50px;
-    position: fixed;
     order: 0;
+    position: fixed;
     top: 0;
     border-bottom: 5px solid #4c4c34;
     background-color: #ccccb3;
@@ -31,8 +35,10 @@ body {
     padding: 5px;
     z-index: 1;
 }
+/* rules applicable for header -end */
 
-.flex-item{
+/* rules applicable for section -start */
+.flex-item {
     flex: 1;
 }
 
@@ -41,39 +47,26 @@ body {
     order: 1;
 }
 
-.container{
-  display: flex;
+.container {
+    display: flex;
+}
+
+h4 {
+    font-weight: lighter;
 }
 
 .section-list-style {
     width: 29%;
-    float: left;
-    padding: 5px;
     height: 100%;
+    order: 0;
+    flex-grow: 1;
+    padding: 5px;
     border: 5px solid #4c4c34;
     margin-right: 1px;
-    flex-grow: 1;
 }
 
-.section-map-style {
-    width: 70%;
-    float: right;
-    border: 5px solid #4c4c34;
-    flex-grow: 2;
-}
-
-.map-div {
-    width: 100%;
-    height: 700px;
-}
-
-#map{
-    height: 100%;
-    width: 100%;
-}
-
+/* rules for list and list items */
 .list-item-style {
-    /*background-color: #ffeb99;*/
     background-color: #d6d6c2;
     margin: 5px;
     border-radius: 10px;
@@ -90,62 +83,88 @@ ul {
 }
 
 .filter-parent {
-  background-color: #ccccb3;
-  padding: 5px;
+    background-color: #ccccb3;
+    padding: 5px;
 }
 
+/* rules for input and buttons */
 .filter-input {
     border-radius: 5px;
-    /*width: 60%;*/
     border: 1px solid #4c4c34;
 }
 
 .filter-button {
     border-radius: 15px;
-    /*width: 15%;*/
     font: 18px bold black;
     border: 1px solid #4c4c34;
     cursor: pointer;
 }
 
-.footer-style {
-  width: 100%;
-  min-height: 20px;
-  order: 2;
-  position: fixed;
-  bottom: 0;
-  vertical-align: middle;
-  background-color: #ccccb3;
-  font: 15px italic;
-  border-top: 2px solid #4c4c34;
+.section-map-style {
+    width: 70%;
+    order: 1;
+    flex-grow: 2;
+    border: 5px solid #4c4c34;
 }
 
+/* rules for map */
+.map-div {
+    width: 100%;
+    height: 700px;
+}
 
-@media only screen and (min-width: 800px) and (max-width: 1199px){
+#map {
+    height: 100%;
+    width: 100%;
+}
+/* rules applicable for section -end */
+
+/* rules applicable for footer -start */
+.footer-style {
+    width: 100%;
+    min-height: 20px;
+    order: 2;
+    position: fixed;
+    bottom: 0;
+    vertical-align: middle;
+    background-color: #ccccb3;
+    font: 15px italic;
+    border-top: 2px solid #4c4c34;
+}
+/* rules applicable for footer -end */
+
+/* media queries -start */
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
     .filter-input,
     .filter-button {
-       display: block;
+        display: block;
     }
 }
 
-@media only screen and (max-width: 699px) and (min-width: 0px){
-  .container {
-    flex-direction: column;
-  }
+@media only screen and (max-width: 699px) {
+    .container {
+        flex-direction: column;
+    }
 
-  .section-list-style,
-  .section-map-style {
-    flex-grow: 1;
-    width: auto;
-  }
+    .section-list-style,
+    .section-map-style {
+        flex-grow: 1;
+        width: auto;
+    }
 }
 
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 350px) {
     .main-header {
         height: 70px;
     }
 
     .main-section {
-      margin-top: 76px;
+        margin-top: 76px;
+    }
+
+    .filter-input,
+    .filter-button {
+        display: block;
     }
 }
+/* media queries -end */
