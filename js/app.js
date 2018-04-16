@@ -122,7 +122,9 @@ var ViewModel = function(){
         locations.forEach(function(locationItem){
             var locationItem = new Location(locationItem);
             var locationTitle = locationItem.title();
-            if(locationTitle.includes(filterText)){
+            var locationTitleLower = locationTitle.toLowerCase();
+            if(locationTitle.includes(filterText) ||
+                locationTitleLower.includes(filterText)){
                 self.locationList.push(locationItem);
             }
             else{
