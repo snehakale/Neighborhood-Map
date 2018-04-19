@@ -52,7 +52,7 @@ This project uses *javascript, ajax, knockout.js, html and css*. Also implements
 1. [Knockout.js](http://knockoutjs.com/) and [Knockout.js data bindings](http://knockoutjs.com/documentation/introduction.html)
 2. [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 3. [JQuery AJAX](http://api.jquery.com/jquery.ajax/)
-4. [Google Maps API](https://developers.google.com/maps/documentation/javascript/)
+4. [Google Maps API](https://developers.google.com/maps/documentation/javascript/)  and [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/markers)
 5. [Forsquare API](https://developer.foursquare.com/docs)
 6. [HTML5](https://www.w3schools.com/html/html5_intro.asp)
 7. [CSS](https://www.w3schools.com/css/)
