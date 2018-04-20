@@ -1,44 +1,52 @@
 // Locations data
 var locations = [
-    { title: 'Georgia Aquarium',
-      position: {lat: 33.763333 ,lng: -84.395268 },
-      venueId: '44dbbfa8f964a520a0361fe3',
-      id: 0
+    {
+        title: 'Georgia Aquarium',
+        position: {lat: 33.763333 ,lng: -84.395268 },
+        venueId: '44dbbfa8f964a520a0361fe3',
+        id: 0
     },
-    { title: 'CNN Center',
-      position: {lat: 33.758028 ,lng: -84.395084 },
-      venueId: '43680180f964a52082291fe3',
-      id: 1
+    {
+        title: 'CNN Center',
+        position: {lat: 33.758028 ,lng: -84.395084 },
+        venueId: '43680180f964a52082291fe3',
+        id: 1
     },
-    { title: 'Zoo Atlanta',
-      position: {lat: 33.734193 ,lng: -84.372253 },
-      venueId: '55545128498e64955f7eff2f',
-      id: 2
+    {
+        title: 'Zoo Atlanta',
+        position: {lat: 33.734193 ,lng: -84.372253 },
+        venueId: '55545128498e64955f7eff2f',
+        id: 2
     },
-    { title: 'Philips Arena',
-      position: {lat: 33.757181267669 ,lng: -84.39642028265698 },
-      venueId: '4362bb80f964a5204c291fe3',
-      id: 3
+    {
+        title: 'Philips Arena',
+        position: {lat: 33.757181267669 ,lng: -84.39642028265698 },
+        venueId: '4362bb80f964a5204c291fe3',
+        id: 3
     },
-    { title: 'World of Coca-Cola',
-      position: {lat: 33.76288 ,lng: -84.392681 },
-      venueId: '4a49624ff964a5203fab1fe3',
-      id: 4
+    {
+        title: 'World of Coca-Cola',
+        position: {lat: 33.76288 ,lng: -84.392681 },
+        venueId: '4a49624ff964a5203fab1fe3',
+        id: 4
     },
-    { title: 'Centenial Olympic Park',
-      position: {lat: 33.760383 ,lng: -84.393539 },
-      venueId: '4a05d34ef964a52083721fe3',
-      id: 5
+    {
+        title: 'Centenial Olympic Park',
+        position: {lat: 33.760383 ,lng: -84.393539 },
+        venueId: '4a05d34ef964a52083721fe3',
+        id: 5
     },
-    { title: 'Georgia Institute of Technology',
-      position: {lat: 33.775652 ,lng: -84.396286 },
-      venueId: '4ab2b4c3f964a520f26b20e3',
-      id: 6
+    {
+        title: 'Georgia Institute of Technology',
+        position: {lat: 33.775652 ,lng: -84.396286 },
+        venueId: '4ab2b4c3f964a520f26b20e3',
+        id: 6
     },
-    { title: 'Martin Luther King Jr. Historical Park',
-      position: {lat: 33.756351 ,lng: -84.373455 },
-      venueId: '4bba235f3db7b7137ff2229a',
-      id: 7
+    {
+        title: 'Martin Luther King Jr. Historical Park',
+        position: {lat: 33.756351 ,lng: -84.373455 },
+        venueId: '4bba235f3db7b7137ff2229a',
+        id: 7
     }
 ]
 
