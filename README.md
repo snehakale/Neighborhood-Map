@@ -4,8 +4,8 @@ This project contains a webpage showing a list of locations and a google map sho
 This project uses *javascript, ajax, knockout.js, html and css*. Also implements third party apis such as *Google Maps API* and *Foursquare API*.
 
 ## Pre-Requisites and Installation
-1. Download the given project folders.
-2. Unzip the folders and place the files according to the given hierarchy.
+1. Download the given project folder.
+2. Unzip the folder and place the files according to the given hierarchy.
 3. To run this project you have to make sure for Google api browser key and referrer values.
 4. Run **index.html**.
 
