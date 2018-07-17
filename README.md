@@ -57,3 +57,6 @@ This project uses *javascript, ajax, knockout.js, html and css*. Also implements
 6. [HTML5](https://www.w3schools.com/html/html5_intro.asp)
 7. [CSS](https://www.w3schools.com/css/)
 
+## Author
+Sneha Kale
+
